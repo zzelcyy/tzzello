@@ -1,12 +1,12 @@
 {
-    "extends": ["react-app", "eslint:recommended"],
-    "rules": {
-      "react-hooks/exhaustive-deps": "off",
-      "require-await": "error",
-      "import/no-anonymous-default-export": "off",
-      "curly": "warn",
-      "no-debugger": "warn",
-      "no-unused-vars": "warn",
-      "no-unused-expressions": [2, { "allowShortCircuit": false, "allowTernary": false }]
-    }
+  "extends": ["react-app", "eslint:recommended"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "require-await": "error",
+    "import/no-anonymous-default-export": "off",
+    "curly": "warn",
+    "no-debugger": "warn",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": [2, { "allowShortCircuit": false, "allowTernary": false }]
   }
+}
