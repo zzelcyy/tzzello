@@ -11,6 +11,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.17",
+    "eslint": "^7.32.0",
     "firebase": "^9.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "reformat": "prettier --write src",
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [
