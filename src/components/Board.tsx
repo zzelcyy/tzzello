@@ -1,11 +1,17 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import {Button} from "lib/styles"
+import { Button } from 'lib/styles';
 
-export const Board: FC = () => <BoardContainer>
+export const Board: FC = () => (
+  <BoardContainer>
     <Button>새 작업 추가</Button>
-</BoardContainer>;
+  </BoardContainer>
+);
 
 const BoardContainer = styled.div`
-
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
 `;
