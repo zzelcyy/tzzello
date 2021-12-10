@@ -4,7 +4,7 @@ import { Button } from 'lib/styles';
 
 export const Board: FC = () => (
   <BoardContainer>
-    <Button>새 작업 추가</Button>
+    <Button dashed width="100%" fontColor="#f1f1f1">+ 새 작업 추가</Button>
   </BoardContainer>
 );
 
