@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import { Button } from 'lib/styles';
+import { Board } from 'components/index';
 
 const App: FC = () => (
   <div>
-    <Button>새 작업 추가</Button>
+    <Board />
   </div>
 );
 
