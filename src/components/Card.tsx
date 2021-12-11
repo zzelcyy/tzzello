@@ -1,10 +1,16 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 
-export const Card: FC = () => <CardContainer>
-    <CardTitle>트렐로 개발하기</CardTitle>
-    <CardDeadline><i>~ 2020.12.31</i></CardDeadline>
-    <CardDescription>리액트 드래그 앤 드롭 개발 학습을 위한 작업</CardDescription>
+interface IProps {
+  title: string;
+  deadline: string;
+  desc: string;
+}
+
+export const Card: FC<IProps> = ({title, deadline, desc}) => <CardContainer>
+    <CardTitle>{title}</CardTitle>
+    <CardDeadline><i>~ {deadline}</i></CardDeadline>
+    <CardDescription>{desc}</CardDescription>
 </CardContainer>;
 
 const CardContainer = styled.div`
