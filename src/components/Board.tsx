@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Button } from 'lib/styles';
+import { Card } from './Card';
 
 interface IProps {
   name: string;
@@ -9,6 +10,7 @@ interface IProps {
 export const Board: FC<IProps> = ({ name }) => (
   <BoardContainer>
     <BoardName>{name}</BoardName>
+    <Card />
     <Button dashed width="100%" fontColor="#f1f1f1">
       + 새 작업 추가
     </Button>
