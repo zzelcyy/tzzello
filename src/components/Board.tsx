@@ -22,5 +22,6 @@ const BoardContainer = styled.div`
 `;
 
 const BoardName = styled.h2`
-  
+  font-size: 18px;
+  margin: 8px 0 12px;
 `;
