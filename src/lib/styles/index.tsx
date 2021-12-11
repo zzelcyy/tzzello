@@ -8,6 +8,6 @@ export const Button = styled.button<T.Button>`
   border-radius: 2px;
   padding: 8px;
   cursor: pointer;
-  ${props => props?.fontColor ? `color: ${props?.fontColor};` : ''}
-  ${props => props?.width ? `width: calc(${props?.width} - 18px);` : ''}
+  ${props => (props?.fontColor ? `color: ${props?.fontColor};` : '')}
+  ${props => (props?.width ? `width: calc(${props?.width} - 18px);` : '')}
 `;

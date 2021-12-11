@@ -6,10 +6,12 @@ interface IProps {
   name: string;
 }
 
-export const Board: FC<IProps> = ({name}) => (
+export const Board: FC<IProps> = ({ name }) => (
   <BoardContainer>
     <BoardName>{name}</BoardName>
-    <Button dashed width="100%" fontColor="#f1f1f1">+ 새 작업 추가</Button>
+    <Button dashed width="100%" fontColor="#f1f1f1">
+      + 새 작업 추가
+    </Button>
   </BoardContainer>
 );
 
