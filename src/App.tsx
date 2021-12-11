@@ -7,7 +7,7 @@ const App: FC = () => (
   <div>
     <GlobalStyle />
     <BoardsContainer>
-      <Board />
+      <Board name="To-Do" />
     </BoardsContainer>
   </div>
 );
