@@ -7,11 +7,15 @@ interface IProps {
   desc: string;
 }
 
-export const Card: FC<IProps> = ({title, deadline, desc}) => <CardContainer>
+export const Card: FC<IProps> = ({ title, deadline, desc }) => (
+  <CardContainer>
     <CardTitle>{title}</CardTitle>
-    <CardDeadline><i>~ {deadline}</i></CardDeadline>
+    <CardDeadline>
+      <i>~ {deadline}</i>
+    </CardDeadline>
     <CardDescription>{desc}</CardDescription>
-</CardContainer>;
+  </CardContainer>
+);
 
 const CardContainer = styled.div`
   border-radius: 2px;
